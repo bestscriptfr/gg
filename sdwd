@@ -1,3 +1,6 @@
+--Aim Viewer
+--------------------------------------------------
+
 if game.PlaceId == 2788229376 then
     _G.method = "MousePos"
 end
@@ -143,9 +146,9 @@ if _G.antilockenabled == true then
     UIS.InputBegan:Connect(function(input)
         if input.KeyCode == Enum.KeyCode.Z then
             if VelocityChanger == false then
-                sendnotifi("82.81#6257")
+                sendnotifi("ANTI OFF")
             elseif VelocityChanger == true then
-                sendnotifi("82.81#6257")
+                sendnotifi("ANTI ON")
             end
         end
     end)
